@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Transactions</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor='let transaction of transactions?.data' (click)="onGoToSingleTransaction(transaction)">
+    <ion-card-header>
+      {{transaction.first_name}}
+    </ion-card-header>
+    <ion-card-content>
+      {{transaction.last_name}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

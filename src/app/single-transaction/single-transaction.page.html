@@ -1,0 +1,24 @@
+
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref=""></ion-back-button>
+      </ion-buttons>
+    <ion-title>{{transaction.first_name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  
+<ion-card>
+  <ion-card-header>
+    {{details?.data.first_name}}
+  </ion-card-header>
+  <ion-card-content>
+    <p>{{details?.data.last_name}}</p><br>
+    photo : {{details?.data.avatar}}
+  </ion-card-content>
+</ion-card>
+
+</ion-content>
